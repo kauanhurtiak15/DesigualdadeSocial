@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container principal */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Main */
+main {
+    padding: 40px 30px;
+}
+
+/* Estilização dos títulos */
+h2 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin: 35px 0 20px 0;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 2px;
+}
+
+/* Estilização dos parágrafos e listas */
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #555;
+}
+
+li {
+    font-size: 1.1em;
+    margin: 15px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #444;
+}
+
+li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #ecf0f1;
+    margin: 0;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #5dade2;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+   
+    .container {
+        margin: 0 auto 20px;
+        border-radius: 15px;
+    }
+   
+    header h1 {
+        font-size: 2em;
+    }
+   
+    main {
+        padding: 25px 20px;
+    }
+   
+    h2 {
+        font-size: 1.5em;
+        margin: 25px 0 15px 0;
+    }
+   
+    p, li {
+        font-size: 1em;
+    }
+   
+    footer {
+        padding: 20px 15px;
+    }
+   
+    footer p {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 30px 20px;
+    }
+   
+    header h1 {
+        font-size: 1.7em;
+    }
+   
+    main {
+        padding: 20px 15px;
+    }
+   
+    h2 {
+        font-size: 1.3em;
+    }
+}
+
+/* Animações suaves */
+* {
+    scroll-behavior: smooth;
+}
+
+h2 {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h2:hover {
+    transform: translateX(5px);
+    color: #667eea;
+}
+
+/* Melhor legibilidade para textos longos */
+p {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}
